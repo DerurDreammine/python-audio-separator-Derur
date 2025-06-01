@@ -1,5 +1,30 @@
 # Audio Separator 🎶
 
+## Fork by [**Derur**](https://boosty.to/dreammine)
+Fork add and fix:  
+&nbsp;&nbsp;&nbsp; model_device setting;  
+&nbsp;&nbsp;&nbsp; normal device work for onnxruntime-gpu;  
+&nbsp;&nbsp;&nbsp; no trash and nothing extra;
+&nbsp; 
+Example:
+```python
+import audio_separator.separator
+import logging
+import os
+
+input_path = "input.mp3"
+
+separator = audio_separator.separator.Separator(logging.ERROR,
+    model_file_dir="checkpoints", # path where are models or wehere there downloads
+    output_dir="output",
+    model_device="cuda",
+)
+separator.load_model("2_HP-UVR.pth")
+separator.separate(input_path)
+```
+----------
+**Documentation**
+----------
 [![PyPI version](https://badge.fury.io/py/audio-separator.svg)](https://badge.fury.io/py/audio-separator)
 [![Conda Version](https://img.shields.io/conda/vn/conda-forge/audio-separator.svg)](https://anaconda.org/conda-forge/audio-separator)
 [![Docker pulls](https://img.shields.io/docker/pulls/beveradb/audio-separator.svg)](https://hub.docker.com/r/beveradb/audio-separator/tags)
