@@ -3,10 +3,10 @@
 ## Fork by [**Derur**](https://boosty.to/dreammine)
 Fork add and fix:  
 &nbsp;&nbsp;&nbsp; model_device setting;  
-&nbsp;&nbsp;&nbsp; normal device work for onnxruntime-gpu;  
-&nbsp;&nbsp;&nbsp; no trash and nothing extra;
-&nbsp; 
-Example:
+&nbsp;&nbsp;&nbsp; normal device work for onnxruntime-gpu;   
+&nbsp;&nbsp;&nbsp; no trash and nothing extra;   
+&nbsp;   
+Example:    
 ```python
 import audio_separator.separator
 import logging
